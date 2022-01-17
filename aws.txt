@@ -1,0 +1,13 @@
+import Amplify from 'aws-amplify';
+import aws_exports from './aws-exports';
+
+Amplify.configure(aws_exports);
+
+// or if you don't want to install all the categories
+import Amplify from '@aws-amplify/core';
+import Auth from '@aws-amplify/auth';
+import aws_exports from './aws-exports';
+
+// in this way you are only importing Auth and configuring it.
+Amplify.configure(aws_exports);
+
